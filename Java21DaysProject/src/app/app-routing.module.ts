@@ -1,3 +1,4 @@
+import { HomeComponent } from './home/home.component';
 import { Day21Component } from './Days/day21/day21.component';
 import { Day20Component } from './Days/day20/day20.component';
 import { Day19Component } from './Days/day19/day19.component';
@@ -45,6 +46,7 @@ const routes: Routes = [
   {path:'Day19',component:Day19Component},
   {path:'Day20',component:Day20Component},
   {path:'Day21',component:Day21Component},
+  {path:'',component:HomeComponent}
 ];
 
 @NgModule({

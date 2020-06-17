@@ -27,6 +27,7 @@ import { Day19Component } from './Days/day19/day19.component';
 import { Day20Component } from './Days/day20/day20.component';
 import { Day21Component } from './Days/day21/day21.component';
 import { SideNavComponent } from './SideNav/side-nav/side-nav.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -52,7 +53,8 @@ import { SideNavComponent } from './SideNav/side-nav/side-nav.component';
     Day19Component,
     Day20Component,
     Day21Component,
-    SideNavComponent
+    SideNavComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
