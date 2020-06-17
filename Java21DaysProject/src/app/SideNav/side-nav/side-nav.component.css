@@ -1,0 +1,15 @@
+.sideNav{
+    background: linear-gradient(to bottom, #000000 0%, #808080 100%);
+    width: 350px;
+    position: block;
+    z-index: 0;
+    height:100%;
+    display: block;
+    color: wheat;
+}
+.content{
+    color: white;
+}
+mat-list-item {
+    font-color: white;
+}

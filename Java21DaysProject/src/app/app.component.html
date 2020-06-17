@@ -1,71 +1,48 @@
 <mat-toolbar class="HeaderToolbar">
   <span>
-    <div class="logo">
+    <div class="logo" style="margin-left: 100px;">
       <img src="../assets/images/logo.png" alt="Logo" />
     </div>
   </span>
   <span>
-    <button mat-button class="DaysButton">Day 1</button>
+    <a mat-button class="DaysButton" routerLink="Week1" style="margin-left: 200px;" [matMenuTriggerFor]="week1">Week 1</a>
+    <mat-menu #week1="matMenu">
+      <button mat-menu-item routerLink="Day1">Day 1</button>
+      <button mat-menu-item routerLink="Day2">Day 2</button>
+      <button mat-menu-item routerLink="Day3">Day 3</button>
+      <button mat-menu-item routerLink="Day4">Day 4</button>
+      <button mat-menu-item routerLink="Day5">Day 5</button>
+      <button mat-menu-item routerLink="Day6">Day 6</button>
+      <button mat-menu-item routerLink="Day7">Day 7</button>
+    </mat-menu>
   </span>
   <span>
-    <button mat-button class="DaysButton">Day 2</button>
+    <a mat-button class="DaysButton" routerLink="Week2" [matMenuTriggerFor]="week2">Week 2</a>
+    <mat-menu #week2="matMenu">
+      <button mat-menu-item routerLink="Day8">Day 8</button>
+      <button mat-menu-item routerLink="Day9">Day 9</button>
+      <button mat-menu-item routerLink="Day10">Day 10</button>
+      <button mat-menu-item routerLink="Day11">Day 11</button>
+      <button mat-menu-item routerLink="Day12">Day 12</button>
+      <button mat-menu-item routerLink="Day13">Day 13</button>
+      <button mat-menu-item routerLink="Day14">Day 14</button>
+    </mat-menu>
   </span>
   <span>
-    <button mat-button class="DaysButton">Day 3</button>
-  </span>
-  <span>
-    <button mat-button class="DaysButton">Day 4</button>
-  </span>
-  <span>
-    <button mat-button class="DaysButton">Day 5</button>
-  </span>
-  <span>
-    <button mat-button class="DaysButton">Day 6</button>
-  </span>
-  <span>
-    <button mat-button class="DaysButton">Day 7</button>
-  </span>
-  <span>
-    <button mat-button class="DaysButton">Day 8</button>
-  </span>
-  <span>
-    <button mat-button class="DaysButton">Day 9</button>
-  </span>
-  <span>
-    <button mat-button class="DaysButton">Day 10</button>
-  </span>
-  <span>
-    <button mat-button class="DaysButton">Day 11</button>
-  </span>
-  <span>
-    <button mat-button class="DaysButton">Day 12</button>
-  </span>
-  <span>
-    <button mat-button class="DaysButton">Day 13</button>
-  </span>
-  <span>
-    <button mat-button class="DaysButton">Day 14</button>
-  </span>
-  <span>
-    <button mat-button class="DaysButton">Day 15</button>
-  </span>
-  <span>
-    <button mat-button class="DaysButton">Day 16</button>
-  </span>
-  <span>
-    <button mat-button class="DaysButton">Day 17</button>
-  </span>
-  <span>
-    <button mat-button class="DaysButton">Day 18</button>
-  </span>
-  <span>
-    <button mat-button class="DaysButton">Day 19</button>
-  </span>
-  <span>
-    <button mat-button class="DaysButton">Day 20</button>
-  </span>
-  <span>
-    <button mat-button class="DaysButton">Day 21</button>
+    <a mat-button class="DaysButton" routerLink="Week3" [matMenuTriggerFor]="week3">Week 3</a>
+    <mat-menu #week3="matMenu">
+      <button mat-menu-item routerLink="Day15">Day 15</button>
+      <button mat-menu-item routerLink="Day16">Day 16</button>
+      <button mat-menu-item routerLink="Day17">Day 17</button>
+      <button mat-menu-item routerLink="Day18">Day 18</button>
+      <button mat-menu-item routerLink="Day19">Day 19</button>
+      <button mat-menu-item routerLink="Day20">Day 20</button>
+      <button mat-menu-item routerLink="Day21">Day 21</button>
+    </mat-menu>
   </span>
 </mat-toolbar>
-<router-outlet></router-outlet>
+<mat-sidenav-container class="example-container">
+  <mat-sidenav mode="side" opened ><app-side-nav></app-side-nav></mat-sidenav>
+  <mat-sidenav-content><router-outlet></router-outlet></mat-sidenav-content>
+</mat-sidenav-container>
+
